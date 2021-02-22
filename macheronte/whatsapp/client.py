@@ -13,3 +13,45 @@ from io import BytesIO
 import os
 import time
 import ast
+
+
+class WhatsappClient:
+
+    def __init__(self):
+        pass
+
+    def connect(self) -> bool:
+        pass
+
+    def minimize_window(self):
+        pass
+
+    def maximize_window(self):
+        pass
+
+    def is_logged(self) -> bool:
+        pass
+
+    def save_qrcode(self, file_name: str) -> bool:
+        pass
+
+    def save_header(self, file_name: str) -> bool:
+        pass
+
+    def get_header(self) -> bool:
+        pass
+
+    def open_chat(self, target: str) -> bool:
+        pass
+
+    def get_user_status(self, target: str) -> bool:
+        pass
+
+    def send_message(self, target, message: str) -> bool:
+        pass
+
+    def __get_img_by_variable(self, variable_name: str) -> str:
+        pass
+
+    def __get_xpath(self, file_name: str) -> str:
+        pass
