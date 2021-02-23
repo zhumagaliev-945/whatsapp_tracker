@@ -1,3 +1,18 @@
-from macheronte import testing
+from macheronte import WhatsappClient
+from macheronte import Browsers
 
-print(testing(8))
+import time
+
+client = WhatsappClient(Browsers.CHROME, '')
+client.connect()
+
+while True:
+    try:
+        if client.is_logged():
+            status = client.get_user_status('Баха')
+
+            print(status.value)
+    except Exception as e:
+        print(e)
+
+    time.sleep(2)
